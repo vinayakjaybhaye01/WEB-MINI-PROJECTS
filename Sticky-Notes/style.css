@@ -1,0 +1,120 @@
+body{
+    background-color: gray;
+    margin: 0;   
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position:relative;
+
+
+    background-image: linear-gradient(
+        to right,
+        #ff7e5f, /* Sunset Orange */
+        #feb47b  /* Light Orange */
+    );
+    background-image: linear-gradient(
+        to bottom,
+        #00c6ff, /* Light Blue */
+        #0072ff  /* Darker Blue */
+    );
+    background-image: linear-gradient(
+        to right,
+        #a18cd1, /* Light Purple */
+        #fbc2eb  /* Light Pink */
+    );
+    background-image: linear-gradient(
+        to right,
+        #dfe9f3, /* Light Gray-Blue */
+        #ffffff  /* White */
+    );
+    background-image: linear-gradient(
+        to bottom,
+        #e0eafc, /* Light Blue */
+        #cfdef3  /* Very Light Blue */
+    );
+    background-image: linear-gradient(
+        to right,
+        #2af598, /* Light Green */
+        #009e49  /* Darker Green */
+    );
+    background-image: linear-gradient(
+        to right,
+        #ff9a8b, /* Warm Pink */
+        #ffdde1  /* Light Peach */
+    );
+                        
+}
+
+form{
+    background-color: rgb(69, 67, 63);
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+    border-radius: 8px;
+    gap: 15px;
+
+}
+
+form input, button{
+    
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    color: red;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+form input::-webkit-color-swatch-wrapper{
+    padding: 0;
+}
+
+form input::-webkit-color-swatch{
+    border-radius: 50%;
+}
+
+#list textarea{
+    all:unset;
+    cursor:text;
+}
+
+
+#list .note{
+  background-color: rgb(32, 210, 97);
+  width: max-content;
+  border-top: 30px solid #0f8107;
+  outline: 2px solid #e74c3c;
+  border-radius: 8px;
+  box-shadow: 0 20px 50px rgb(84, 34, 100);
+  padding: 10px;
+  position: absolute;
+  top: 60px;
+  left: 80px;
+}
+
+textarea::placeholder {
+    color: rgb(226, 10, 46); /* Set placeholder text color */
+}
+
+#list .note span{
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    height: 30px;
+    padding: 15px 15px 0 0;
+    font-family: cursive;
+    font-size: large;
+    cursor: pointer;
+}

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #729EA1;
+}
+
+h1{
+    margin-top: 20px;
+}
+.container{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.game{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border: 2px solid #B5BD89;
+    border-radius: 15px;
+    background-color: #DFBE99;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.message-box{
+    padding:5px  20px;
+      border: 2px solid transparent;
+      font-size: 20px;
+      background-color: #DB5375;
+      color: rgb(246, 241, 241);
+      border-radius: 10px;
+}
+.score{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    font-size: 25px;
+}
+
+.reset{
+    height: 10%;
+}
+#resetBtn{
+    background-color: #c65757;
+    color: white;
+    font-size: 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding:5px 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+#resetBtn:hover{
+    font-size: 35px;
+}
+
+.btn:nth-child(1){
+    background-image: url(rock.png);
+}
+.btn:nth-child(2){
+    background-image: url(paper.png);
+}
+.btn:nth-child(3){
+    background-image: url(scissor.png);
+    background-size:cover;
+}
+
+.hidden{
+    visibility: hidden;
+}
